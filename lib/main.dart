@@ -42,6 +42,7 @@ class _DiceAppState extends State<DiceApp> {
               onPressed: () {
                 setState(() {
                   leftDiceNum=Random().nextInt(6) +1;
+                  rightDiceNum=Random().nextInt(6) +1;
                   print(leftDiceNum);
                 });
 
@@ -53,6 +54,7 @@ class _DiceAppState extends State<DiceApp> {
               child: Image.asset('images/dice$rightDiceNum.png'),
               onPressed: () {
                 setState(() {
+                  leftDiceNum=Random().nextInt(6) +1;
                   rightDiceNum=Random().nextInt(6) +1;
                 });
               },
